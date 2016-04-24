@@ -28,8 +28,8 @@ class CalculatorBrain {
         "+" : Operation.BinaryOperation({ $0 + $1 }),
         "-" : Operation.BinaryOperation({ $0 - $1 }),
         "=" : Operation.Equals
-        
     ]
+    
     private enum Operation {
         case Constant(Double)
         case UnaryOperation((Double)->Double)
